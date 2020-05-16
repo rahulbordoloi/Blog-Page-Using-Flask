@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css') }}">  <!--url_for() is more rhobust-->
+    <!--Jinja2, comes with flask-->
+    {% block head %} 
+    
+    {% endblock %}
+</head>
+
+<body>
+    {% block body %} 
+    
+    {% endblock %}
+</body>
+
+</html>
